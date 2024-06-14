@@ -1,10 +1,6 @@
-public class Magazine {
+public class Magazine extends PrintedProduct {
 
-    private int pageQuantity;
-    private String content;
-
-    public void printContent(){
-        System.out.println(content);
+    public Magazine(String name, int pageQuantity, String content) {
+        super(name, pageQuantity, content);
     }
-
 }

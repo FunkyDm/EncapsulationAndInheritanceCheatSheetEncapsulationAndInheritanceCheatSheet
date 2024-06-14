@@ -1,22 +1,14 @@
 import java.time.LocalDate;
 
-public class Book {
+public class Book extends PrintedProduct {
 
-    private String name;
     private String authorName;
     private int publishYear;
 
-    private int pageQuantity;
-    private String content;
-
-    public Book(String name, String authorName, int year) {
+    public Book(String name, int pageQuantity, String content, String authorName, int publishYear) {
+        super(name, pageQuantity, content);
         this.authorName = authorName;
-        this.name = name;
-        this.publishYear = year;
-    }
-
-    public String getName() {
-        return name;
+        this.publishYear = publishYear;
     }
 
     public String getAuthorName() {
@@ -33,10 +25,6 @@ public class Book {
             return;
         }
         this.publishYear = year;
-    }
-
-    public void printContent() {
-        System.out.println(content);
     }
 
 }
