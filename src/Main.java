@@ -32,5 +32,20 @@ public class Main {
             controller.turnOnFirstChannel();
         }
 
+        PolarBear bear = new PolarBear();
+        FurSeal furSeal = new FurSeal();
+
+        Swimmable bear2 = new PolarBear();
+        Swimmable furSeal2 = new FurSeal();
+
+        addToPool(bear);
+        addToPool(furSeal2);
+
     }
+
+    public static void addToPool(Swimmable animal) {
+//        swimmingPool.add(animal);
+//        animal.swim();
+    }
+
 }
