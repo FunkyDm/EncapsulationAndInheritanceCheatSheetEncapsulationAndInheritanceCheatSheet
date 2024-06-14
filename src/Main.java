@@ -41,11 +41,46 @@ public class Main {
         addToPool(bear);
         addToPool(furSeal2);
 
+        A a = new A();
+        A b1 = new B();
+        B b2 = new B();
+
+        a.doSmth();
+        b1.doSmth();
+//        b1.doSmth2();
+        b2.doSmth();
+        b2.doSmth2();
+
+        int n1 = 5;
+        String n2 = "6";
+//        printSquare(n1,null);
+//        printSquare(-1, n2);
+        printSquare(n1);
+        printSquare(n2);
+
     }
 
     public static void addToPool(Swimmable animal) {
 //        swimmingPool.add(animal);
 //        animal.swim();
+    }
+
+//    public static void printSquare(int num, String numStr){
+//        if(num != -1){
+//            System.out.println(num*num);
+//        } else{
+//            int parsedNum = Integer.parseInt(numStr);
+//            System.out.println(parsedNum * parsedNum);
+//        }
+//    }
+
+    public static void printSquare(int num){
+        System.out.println(num * num);
+    }
+
+    public static void printSquare(String str){
+        int parsedNum = Integer.parseInt(str);
+        System.out.println(parsedNum * parsedNum);
     }
 
 }
