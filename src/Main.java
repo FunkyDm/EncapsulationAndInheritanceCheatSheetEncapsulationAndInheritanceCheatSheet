@@ -6,6 +6,8 @@ public class Main {
         Book b = new Book("Crime and punishment", 1000, "base book content", "Fyodor Dostoyevskiy", 1868);
         Magazine m = new Magazine("Generic name", 500, "Generic magazine content");
 
+        //PrintedProduct pr = new PrintedProduct("name", 12, "content");
+
         PrintedProduct[] products = new PrintedProduct[] {
                 new Book("Generic book name 1", 300, "generic book content 1", "generic author book 1", 1377),
                 new Magazine("name1", 100, "c1"),
@@ -20,6 +22,15 @@ public class Main {
 
         m.printContent();
         b.printContent();
+
+        TVController[] controllers = new TVController[]{
+                new SmartSpeaker(),
+                new RemoteController()
+        };
+
+        for(TVController controller : controllers){
+            controller.turnOnFirstChannel();
+        }
 
     }
 }
