@@ -1,4 +1,4 @@
-public class PrintedProduct {
+public abstract class PrintedProduct {
 
     private String name;
     private int pageQuantity;
